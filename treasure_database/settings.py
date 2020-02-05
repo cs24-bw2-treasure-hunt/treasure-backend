@@ -77,6 +77,7 @@ WSGI_APPLICATION = 'treasure_database.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+# Uncomment and change to run postgres
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.sqlite3',
