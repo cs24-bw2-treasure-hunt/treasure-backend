@@ -1,0 +1,1 @@
+web: gunicorn treasure_database.wsgi:application —-log-file -
