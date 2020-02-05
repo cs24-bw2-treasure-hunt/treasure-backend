@@ -1,11 +1,6 @@
 
 .DS_Store
 
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -34,7 +29,6 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
-
 
 
 # PyInstaller
@@ -83,16 +77,9 @@ target/
 #   install all needed dependencies.
 
 
-
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow
 __pypackages__/
 
-# celery beat schedule file
-celerybeat-schedule
-celerybeat.pid
-
-# SageMath parsed files
-*.sage.py
 
 # Environments
 .env
@@ -103,28 +90,14 @@ ENV/
 env.bak/
 venv.bak/
 
-# Spyder project settings
-.spyderproject
-.spyproject
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
 
-# Rope project settings
-.ropeproject
+tmp/*
 
-# Mr Developer
-.mr.developer.cfg
-.project
-.pydevproject
-
-# mkdocs documentation
-/site
-
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
-# Pyre type checker
-.pyre/
-
+Pipfile.lock
 
 .vscode
+
