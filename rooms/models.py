@@ -12,14 +12,7 @@ class Room(models.Model):
     cooldown = models.IntegerField(blank=True, editable=False)
     errors = models.CharField(max_length=255, blank=True)
     messages = models.CharField(max_length=500, blank=True)
-
-    # May need adjustments for array fields. blank=True allows for empty fields. DOES NOT WORK WITH SQL
-    # players = ArrayField(models.CharField(max_length=255), default=list)
-    # items = ArrayField(models.CharField(max_length=255), default=list)
-    # exits = ArrayField(models.CharField(max_length=255), default=list)
-    # cooldown = models.IntegerField(editable=False)
-    # errors = ArrayField(models.CharField(max_length=255), default=list)
-    # messages = ArrayField(models.CharField(max_length=255), default=list)
+    
 
 class Inventory(models.Model):
     name = models.CharField(max_length=20, blank=True)

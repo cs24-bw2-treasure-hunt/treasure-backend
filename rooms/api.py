@@ -11,6 +11,7 @@ class RoomSerializer(serializers.HyperlinkedModelSerializer):
 class RoomViewSet(viewsets.ModelViewSet):
     serializer_class = RoomSerializer
     queryset = Room.objects.all()
+    
 
 # Inventory
 class InventorySerializer(serializers.HyperlinkedModelSerializer):
